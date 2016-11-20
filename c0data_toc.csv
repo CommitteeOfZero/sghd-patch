@@ -1,0 +1,67 @@
+# id,filename_on_disk,filename_in_archive
+# font replacement
+0,temp\output.png,FONT.PNG
+# high-quality redrawn backgrounds
+1,c0data\BG24A1.png,BG24A1.png
+2,c0data\BG24A3.png,BG24A3.png
+3,c0data\BG24E1.png,BG24E1.png
+4,c0data\BG24E3.png,BG24E3.png
+5,c0data\BG24N1.png,BG24N1.png
+6,c0data\BG24N3.png,BG24N3.png
+7,c0data\IBG006.png,IBG006.png
+8,c0data\IBG011.png,IBG011.png
+9,c0data\IBG013A.png,IBG013A.png
+10,c0data\IBG013B.png,IBG013B.png
+11,c0data\IBG013C.png,IBG013C.png
+12,c0data\IBG013D.png,IBG013D.png
+13,c0data\IBG013E.png,IBG013E.png
+14,c0data\IBG013F.png,IBG013F.png
+15,c0data\IBG013G.png,IBG013G.png
+16,c0data\IBG013H.png,IBG013H.png
+17,c0data\IBG013I.png,IBG013I.png
+18,c0data\IBG013J.png,IBG013J.png
+19,c0data\IBG013K.png,IBG013K.png
+20,c0data\IBG013L.png,IBG013L.png
+21,c0data\IBG013M.png,IBG013M.png
+22,c0data\IBG013N.png,IBG013N.png
+23,c0data\IBG013O.png,IBG013O.png
+24,c0data\IBG013P.png,IBG013P.png
+25,c0data\IBG014A.png,IBG014A.png
+26,c0data\IBG014B.png,IBG014B.png
+27,c0data\IBG014C.png,IBG014C.png
+28,c0data\IBG014D.png,IBG014D.png
+29,c0data\IBG014E.png,IBG014E.png
+30,c0data\IBG015B.png,IBG015B.png
+31,c0data\IBG015C.png,IBG015C.png
+32,c0data\IBG015D.png,IBG015D.png
+33,c0data\IBG015E.png,IBG015E.png
+34,c0data\IBG015F.png,IBG015F.png
+35,c0data\IBG017.png,IBG017.png
+36,c0data\IBG043.png,IBG043.png
+37,c0data\IBG047.png,IBG047.png
+38,c0data\IBG054.png,IBG054.png
+39,c0data\IBG058A.png,IBG058A.png
+40,c0data\IBG058B.png,IBG058B.png
+41,c0data\IBG058C.png,IBG058C.png
+42,c0data\IBG058D.png,IBG058D.png
+43,c0data\IBG058E.png,IBG058E.png
+44,c0data\IBG058F.png,IBG058F.png
+45,c0data\IBG058G.png,IBG058G.png
+46,c0data\IBG058H.png,IBG058H.png
+47,c0data\IBG058I.png,IBG058I.png
+48,c0data\IBG058J.png,IBG058J.png
+49,c0data\IBG066.png,IBG066.png
+50,c0data\IBG091.png,IBG091.png
+51,c0data\IBG094.png,IBG094.png
+52,c0data\IBG095.png,IBG095.png
+53,c0data\IBG097.png,IBG097.png
+54,c0data\IBG099.png,IBG099.png
+# high-quality FMV audio (from JAST release)
+55,c0data\imv041.ogg,imv041.ogg
+56,c0data\imv042.ogg,imv042.ogg
+# TL fix
+57,c0data\DATA01.dds,DATA01.dds
+58,c0data\CLEARLIST.DDS,CLEARLIST.DDS
+59,c0data\MOVMENU.DDS,MOVMENU.DDS
+# SONG1 cut for A/V sync with op2.bk2
+60,c0data\geniac_hq_cut.ogg,geniac_hq_cut.ogg
