@@ -1,0 +1,8 @@
+{
+  "__schema_version": 2,
+  "channels": {
+    "stable-steam-win32": {
+      "intVersion": 1
+    }
+  }
+}
