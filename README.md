@@ -2,12 +2,12 @@
 
 Here's how you build this. The process is pretty messy at the moment. Sorry about that; we'll try to make this friendlier with later LanguageBarrier versions.
 
-Keep in mind this stuff is not ready for producing translations yet. For instance, LanguageBarrier currently only works with SGHD and has default configuration for our own patch built in.
+Keep in mind: this stuff is not ready for producing translations yet. For instance, LanguageBarrier currently only works with SGHD and has default configuration for our own patch built in.
 
 If at this point you *really really* want to build/use this and need assistance, [join us on Discord](https://discord.gg/rq4GGCh)
 
 ### Dependencies
-You need Visual Studio 2015 Update 3 and Python 2.7 installed (latter being in your path as python.exe). There are some more code dependencies, we'll go over how to grab them later.
+You need [Visual Studio 2015 Update 3](https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2015-update3-vs) and [Python 2.7](https://www.python.org/download/releases/2.7/) installed (latter being in your path as python.exe). There are some more code dependencies, we'll go over how to grab them later.
 
 ### Get all the repositories
 Clone:
