@@ -1,0 +1,9 @@
+# MSVC 2022's MSBuild executable. This is probably already correct.
+$msbuild ="C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MsBuild.exe"
+
+# Root of your LanguageBarrier repository (https://github.com/CommitteeOfZero/LanguageBarrier), i.e. where LanguageBarrier.sln is. (You can set up a common one or use the submodule)
+$languagebarrier_dir = ".\LanguageBarrier"
+# Build configuration. This is probably already correct.
+$languagebarrier_configuration = "dinput8-Release"
+# Add things that need to be on your PATH for this build here, e.g. Visual C++ 2022 binary dir, Qt 5.x for 2019 binary dir, 7-Zip binary dir
+$env:path = "C:\Qt\5.15.2\msvc2019\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\VC;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build;" + $env:path

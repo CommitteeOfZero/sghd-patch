@@ -1,3 +1,29 @@
+config.ps1
 temp/
 DIST/
+symbols/
+sg-edited-images/*
+!sg-edited-images/.gitkeep
+script_archive_steam/*
+!script_archive_steam/.gitkeep
+sg-textdumps/*
+!sg-textdumps/.gitkeep
 /*.zip
+/*.rar
+
+# noidget
+installer/build/*
+!installer/build/.gitkeep
+installer/deploy/
+installer/deployUninstaller/
+installer/userdata/enscriptToc.json
+installer/userdata/enscriptTocC.json
+
+# realboot
+launcher/build/*
+!launcher/build/.gitkeep
+launcher/deploy/
+
+content/languagebarrier/audio/*
+content/languagebarrier/videos/720p/*
+content/languagebarrier/videos/1080p/*

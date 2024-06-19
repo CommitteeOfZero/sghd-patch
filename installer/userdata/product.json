@@ -1,0 +1,48 @@
+{
+    "windowTitle": "Steins;Gate Improvement Patch Installer",
+    "uninstallerWindowTitle": "Steins;Gate Improvement Patch Uninstaller",
+    "gameTitle": "Steins;Gate",
+    "inputScriptVersionTitle": "English Steam",
+    "paths": {
+        "GAME_STEAM_NAME": "STEINS;GATE",
+        "PATCH_CONTENT": "DIST",
+        "LAUNCHERENG_PATH": "%GAME_PATH%/LauncherC0.exe",
+        "LANGUAGEBARRIER_LOG_PATH": "%GAME_PATH%/languagebarrier/log.txt",
+        "LAUNCHER_EXE": "LauncherC0.exe"
+    },
+    "platforms": {
+        "windows": {
+            "conflictingProcesses": [
+                "Game.exe",
+                "noidget.exe",
+                "launcher.exe",
+                "LauncherC0.exe",
+                "SGPatch-Installer.exe"
+            ],
+            "uninstallProductKey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\SteinsGateImprovementPatch",
+            "uninstallProductDisplayName": "Steins;Gate Improvement Patch",
+            "uninstallProductDisplayVersion": "2.2.0",
+            "uninstallProductVersionMajor": 2,
+            "uninstallProductVersionMinor": 0,
+            "uninstallProductUninstallString": "\"%GAME_PATH%/nguninstall.exe\"",
+            "paths": {
+                "COZ_CONFIG_LOCATION": "%LOCALAPPDATA%/Committee of Zero",
+                "CONFIG_LOCATION": "%COZ_CONFIG_LOCATION%/SGHD",
+                "MAGES_CONFIG_LOCATION": "%MYDOCUMENTS%/My Games/mages_steam",
+                "GAME_CONFIG_LOCATION": "%MAGES_CONFIG_LOCATION%/STEINS;GATE/eng",
+                "DESKTOP_SHORTCUT_PATH": "%DESKTOP%/Steins;Gate (Improvement Patch).lnk",
+                "STARTMENU_SHORTCUT_PATH": "%STARTMENU%/Steins;Gate (Improvement Patch).lnk"
+            }
+        }
+    },
+    "playShortcut": {
+        "displayName": "Steins;Gate (Improvement Patch)",
+        "version": "2.2.0",
+        "targetPath": "%LAUNCHERENG_PATH%",
+        "workingDir": "%GAME_PATH%",
+        "tooltip": "Play Steins;Gate (Improvement Patch)",
+        "xdgCategories": "Game"
+    },
+    "origScriptArchivePath": "%GAME_PATH%/USRDIR/script.mpk",
+    "origScriptArchiveHash": "a3827104596fc8f89d9d3cc6b83fca79"
+}

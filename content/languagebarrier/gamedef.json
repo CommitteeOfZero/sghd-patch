@@ -1,0 +1,550 @@
+{
+  "__schema_version": 2,
+  "gameName": "STEINS;GATE",
+  "gameDxVersion": "dx9",
+  "bgmClear": -1,
+  "mpkIdScriptMpk": 3,
+  "mpkIdBgmMpk": 7,
+  "audioPlayerIdBgm1": 7,
+  "firstFontId": 78,
+  "coordsMultiplier": 1.5,
+  "fontCellWidth": 32,
+  "fontCellHeight": 32,
+  "fontRowLength": 64,
+  "glyphRangeFullwidthStart": 351,
+  "defaultLineLength": 1280,
+  "defaultMaxCharacters": 255,
+  "glyphIdFullwidthSpace": 0,
+  "glyphIdHalfwidthSpace": 63,
+  "drawGlyphVersion": "sghd",
+  "gslPngLoadVersion": "sghd",
+  "hasBacklogUnderline": true,
+  "hasSghdPhone": true,
+  "sghdLinkUnderlineGlyphX": 1009.5,
+  "sghdLinkUnderlineGlyphY": 193.5,
+  "backlogHighlightDefaultHeight": -34,
+  "hasRine": false,
+  "hasAutoSkipHide": false,
+  "hasSplitFont": false,
+  "hasGetSc3StringLineCount": true,
+  "needsClearlistTextPositionAdjust": false,
+  "signatures": {
+    "bink2w32": {
+      "decompAudioInner": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "53 8B DC 83 EC 08 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC B8"
+      }
+    },
+    "game": {
+      "canaryMagesLauncher": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "E8 ?? ?? ?? ?? 68 ?? ?? ?? ?? 8B CF E8 ?? ?? ?? ?? 8B 35 ?? ?? ?? ??"
+      },
+      "canary": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "80 3D ?? ?? ?? ?? ?? 74 ?? E8 ?? ?? ?? ?? E8 ?? ?? ?? ?? E8 ?? ?? ?? ?? E8 ?? ?? ?? ?? E8 ?? ?? ?? ?? E8"
+      },
+      "closeAllSystems": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "80 3D ?? ?? ?? ?? ?? 74 43 E8 ?? ?? ?? ?? E8"
+      },
+      "dialogueLayoutRelated": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 81 EC ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 45 08 8B 4D 20"
+      },
+      "dialogueLayoutWidthLookup1": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "73 16 85 DB 74 09 0F B6 ?? ?? ?? ?? ?? EB 18 0F B6 ?? ?? ?? ?? ?? EB 0F 81 F9 ?? ?? ?? ?? 72 07"
+      },
+      "dialogueLayoutWidthLookup2": {
+        "occurrence": 0,
+        "offset": 7,
+        "pattern": "83 BD ?? ?? ?? ?? ?? 74 09 0F B6 ?? ?? ?? ?? ?? EB 07 0F B6 ?? ?? ?? ?? ?? 89 4B FC"
+      },
+      "dialogueLayoutWidthLookup3": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "0F B6 ?? ?? ?? ?? ?? 89 4B FC 0F AF ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? B8 ?? ?? ?? ?? F7 E1"
+      },
+      "tipsListWidthLookup": {
+        "pattern": "73 45 8B 45 08 8B 5D 24 ?? ?? ?? 74 1D 0F B6 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 0F AF C3 C1 E8 05",
+        "offset": 0,
+        "occurrence": 0,
+        "return": 20
+      },
+      "drawDialogue": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 0C 53 57 8B 7D 0C 8B DF 69 ?? ?? ?? ?? ?? 89 5D F8 83 BB ?? ?? ?? ?? ?? 0F 84 ?? ?? ?? ?? 56 E8 ?? ?? ?? ?? F3 ?? ?? ?? ?? ?? ?? ?? 33 F6 89 75 F4 39 ?? ?? ?? ?? ?? 0F 86 ?? ?? ?? ?? 8A ?? ?? ?? ?? ?? ?? 88 45 FF 84 C0 0F 84 ?? ?? ?? ?? 8B 45 08 8B DF"
+      },
+      "drawDialogue2": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 0C 53 57 8B 7D 0C 8B DF 69 ?? ?? ?? ?? ?? 89 5D F8 83 BB ?? ?? ?? ?? ?? 0F 84 ?? ?? ?? ?? 56 E8 ?? ?? ?? ?? F3 ?? ?? ?? ?? ?? ?? ?? 33 F6 89 75 F4 39 ?? ?? ?? ?? ?? 0F 86 ?? ?? ?? ?? 8A ?? ?? ?? ?? ?? ?? 88 45 FF 84 C0 0F 84 ?? ?? ?? ?? 8B DF 69"
+      },
+      "drawGlyph": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 34 A1 ?? ?? ?? ?? 33 C5 89 45 FC F3 0F 10 4D 1C F3 0F 10 45 24 F3 0F 5C C1 F3 0F 11 4D DC F3 0F 10 4D 20 56 FF 75 2C 8B 75 08"
+      },
+      "drawPhoneText": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 45 14 8B 4D 18 85 C0 BA ?? ?? ?? ?? 0F 44 C2 53 89 45 14"
+      },
+      "drawRectangle": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 24 A1 ?? ?? ?? ?? 33 C5 89 45 FC F3 0F 10 45 08 FF 75 18 F3 0F 11 45 DC"
+      },
+      "earlyInit": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 53 8B 5D 0C 56 8B 75 08 57 6A 00"
+      },
+      "getSc3StringDisplayWidthFont1": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 81 EC ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 4D 0C 8B 55 08 B8 ?? ?? ?? ?? 85 C9 0F 44 C8 8A 02"
+      },
+      "getSc3StringDisplayWidthFont2": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 81 EC ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 4D 0C 8B 55 08 B8 ?? ?? ?? ?? 85 C9 0F 44 C8 8A 02"
+      },
+      "getSc3StringLineCount": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 81 EC ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 4D 08 8B 45 0C 85 C9 53 BA ?? ?? ?? ?? 0F 44 CA"
+      },
+	  "sghdGetLinksFromSc3String": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 4D 10 8B 45 14"
+      },
+	  "sghdDrawInteractiveMail": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 45 14 8B 4D 18 85 C0 BA ?? ?? ?? ?? 0F 44 C2 89 45 14 8B 45 0C 89 ?? ?? ?? ?? ?? 33 C0"
+      },
+	  "sghdDrawLinkHighlight": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 45 10 8B 4D 14 85 C0 BA ?? ?? ?? ?? 0F 44 C2"
+      },
+      "getStringFromScript": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 8B 45 08 56 8B ?? ?? ?? ?? ?? ?? 0F B6 4E 07 0F B6 46 06"
+      },
+      "gslPngload": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 6A 00 B9 ?? ?? ?? ?? E8 ?? ?? ?? ?? 84 C0 75 1A"
+      },
+      "mgsBinkSetPaused": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 8A 45 08 38 41 02 74 03 88 41 02 33 C0 5D C2 04 00"
+      },
+      "mpkConstructor": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 6A FF 68 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 50 51 53 56 57 A1 ?? ?? ?? ?? 33 C5 50 8D 45 F4 ?? ?? ?? ?? ?? ?? 8B D9"
+      },
+      "mpkFopenById": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 56 8B F1 E8 ?? ?? ?? ?? 8B 45 10 89 46 04 8B 45 08 85 C0 75 37 68 A7 00 00 00"
+      },
+      "mpkMount": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 56 FF 75 08 8B F1 E8 ?? ?? ?? ?? 85 C0 75 56"
+      },
+      "sc3Eval": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 10 33 C0 53 8B 5D 08 A3 ?? ?? ?? ?? 8B ?? ?? ?? ?? ?? 56 57 38 01 0F 84"
+      },
+      "textureFilteringBranch": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "74 21 3D ?? ?? ?? ?? A1 ?? ?? ?? ?? 8B 40 0C 8B 08 75 1A 6A 01 6A 06"
+      },
+      "setSamplerStateWrapper": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 56 8B 75 0C 8B C6"
+      },
+      "textureLoadInit1": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 51 0F B6 4D 08 69 C9 68 10 00 00 6A 00 8D 45 FC 50"
+      },
+      "textureLoadInit2": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 51 0F B6 4D 10 69 C9 68 10 00 00 8D 45 FC 50"
+      },
+      "useOfAudioPlayers": {
+        "occurrence": 0,
+        "offset": 19,
+        "pattern": "55 8B EC 8B 45 08 69 ?? ?? ?? ?? ?? 83 7D 14 00 56 8D"
+      },
+      "useOfD3D9Ex": {
+        "occurrence": 0,
+        "offset": 20,
+        "pattern": "C7 05 ?? ?? ?? ?? ?? ?? ?? ?? A2 ?? ?? ?? ?? 85 C9 75 29 68"
+      },
+      "useOfMgsD3D9State": {
+        "occurrence": 0,
+        "offset": 6,
+        "pattern": "C7 05 ?? ?? ?? ?? ?? ?? ?? ?? A2 ?? ?? ?? ?? 85 C9 75 29 68"
+      },
+      "useOfPCurrentBgm": {
+        "occurrence": 0,
+        "offset": 17,
+        "pattern": "8B 89 58 43 00 00 81 F9 FF FF 00 00 74 22 5F 89 0D ?? ?? ?? ??"
+      },
+      "useOfPLoopBgm": {
+        "occurrence": 0,
+        "offset": 8,
+        "pattern": "8B 35 ?? ?? ?? ?? 89 81 ?? ?? ?? ?? 8B 45 08 89 81 ?? ?? ?? ?? C7 81 ?? ?? ?? ?? 01 00 00 00 83 C4 08",
+        "expr": "*ptr + 4"
+      },
+      "useOfPShouldPlayBgm": {
+        "occurrence": 0,
+        "offset": 8,
+        "pattern": "8B 35 ?? ?? ?? ?? 89 81 ?? ?? ?? ?? 8B 45 08 89 81 ?? ?? ?? ?? C7 81 ?? ?? ?? ?? 01 00 00 00 83 C4 08",
+        "expr": "*ptr + 12"
+      },
+      "useOfPresentParameters": {
+        "occurrence": 0,
+        "offset": 1,
+        "pattern": "68 ?? ?? ?? ?? 50 FF 91 ?? ?? ?? ?? 8B F0"
+      },
+	  "backlogHighlightHeight": {
+        "occurrence": 0,
+        "offset": 18,
+        "pattern": "0F 85 ?? ?? ?? ?? 8B ?? ?? ?? ?? ?? ?? 8B 55 08 83 C0 DE 03 C8"
+      },
+      "useOfGlyphWidthsFont1": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 45 1C 8B 4D 18 85 C0 BA FF 00 00 00 0F 44 C2 8B 55 14 89 45 1C",
+        "expr": "*(ptr + 0x98)"
+      },
+      "useOfGlyphWidthsFont2": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 45 1C 8B 4D 18 85 C0 BA FF 00 00 00 0F 44 C2 8B 55 14 89 45 1C",
+        "expr": "*(ptr + 0xB5)"
+      },
+      "useOfColors": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 45 1C 8B 4D 18 85 C0 BA FF 00 00 00 0F 44 C2 8B 55 14 89 45 1C",
+        "expr": "*(ptr + 0x166) - 0x4"
+      },
+      "useOfDialoguePages": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 0C 53 57 8B 7D 0C 8B DF 69 ?? ?? ?? ?? ?? 89 5D F8 83 BB ?? ?? ?? ?? ?? 0F 84 ?? ?? ?? ?? 56 E8 ?? ?? ?? ?? F3 ?? ?? ?? ?? ?? ?? ?? 33 F6 89 75 F4 39 ?? ?? ?? ?? ?? 0F 86 ?? ?? ?? ?? 8A ?? ?? ?? ?? ?? ?? 88 45 FF 84 C0 0F 84 ?? ?? ?? ?? 8B 45 08 8B DF",
+        "expr": "*(ptr + 0x18) - 0xC"
+      },
+      "useOfScriptIdsToFileIds": {
+        "occurrence": 0,
+        "offset": 12,
+        "pattern": "83 C4 08 8B 47 74 8D 14 B6 8B 0C 85 ?? ?? ?? ?? 8B 87 4C 01 00 00 C1 E2 03 0F B6 58 01 0F B6 00 C1 E3 08",
+        "expr": "*ptr"
+      },
+      "clibFopen": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 6A 40 FF 75 0C"
+      },
+      "rineNameOutlineUpperCall": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "E8 ?? ?? ?? ?? 83 C4 54 8D 47 01"
+      },
+      "rineNameOutlineLowerCall": {
+        "occurrence": 0,
+        "offset": 2,
+        "pattern": "6A 4E E8 ?? ?? ?? ?? FF 35 ?? ?? ?? ?? 6A 14 68 FF FF FF 00 6A 00"
+      },
+      "rineNameColor": {
+        "occurrence": 0,
+        "offset": 1,
+        "pattern": "68 FF FF FF 00 6A 00 FF 75 08"
+      },
+      "rineMessageShadowCall": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "E8 ?? ?? ?? ?? 6A 01 FF 35 ?? ?? ?? ?? 6A 14 6A 00"
+      },
+      "drawSingleTextLine": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 45 1C"
+      },
+      "clearlistDrawRet1": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "8B ?? ?? ?? ?? ?? 8D ?? ?? ?? ?? ?? 6A 00 6A 02"
+      },
+      "clearlistDrawRet2": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "83 C4 30 83 EF 30 85 F6"
+      },
+      "clearlistDrawRet3": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "6A 00 6A 02 8D ?? ?? ?? ?? ?? 50 FF B5"
+      },
+      "clearlistDrawRet4": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "8B ?? ?? ?? ?? ?? 83 C4 30 83 EF 30"
+      },
+      "clearlistDrawRet5": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "6A 00 6A 00 8D ?? ?? ?? ?? ?? 50 FF B5"
+      },
+      "clearlistDrawRet6": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "83 C4 30 E8 ?? ?? ?? ?? 6A 11 6A 00"
+      },
+      "clearlistDrawRet7": {
+        "occurrence": 1,
+        "offset": 0,
+        "pattern": "6A 0D 6A 00 E8"
+      },
+      "clearlistDrawRet8": {
+        "occurrence": 1,
+        "offset": 0,
+        "pattern": "83 C4 5C 8D ?? ?? ?? ?? ?? 6A 00"
+      },
+      "clearlistDrawRet9": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "8B ?? ?? ?? ?? ?? B8 ?? ?? ?? ?? F7 E1 83 C4 40 8B C2 C1 E8 05"
+      },
+      "clearlistDrawRet10": {
+        "occurrence": 1,
+        "offset": 0,
+        "pattern": "6A 01 6A 02 8D ?? ?? ?? ?? ?? 50"
+      },
+      "clearlistDrawRet11": {
+        "occurrence": 1,
+        "offset": 0,
+        "pattern": "6A 0B 6A 00 83 EF 24"
+      },
+      "clearlistDrawRet12": {
+        "occurrence": 1,
+        "offset": 0,
+        "pattern": "83 C4 50 8D ?? ?? ?? ?? ?? 6A 00"
+      },
+      "clearlistDrawRet13": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "83 C4 40 E8 ?? ?? ?? ?? 5F"
+      },
+      "sg0DrawGlyph2": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 7C A1 ?? ?? ?? ?? 33 C5 89 45 FC F3 0F 10 5D 14"
+      },
+      "dlgWordwrapGenerateMask": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 0C 56 57 33 D2 33 F6 33 FF 33 C0"
+      },
+      "useOfDlgWordwrapString": {
+        "occurrence": 0,
+        "offset": 4,
+        "pattern": "0F B7 0C 45 ?? ?? ?? ?? F7 C1 00 80 00 00 0F 84 ?? ?? ?? ?? 81 E1 FF 00 00 00 83 F9 1E",
+        "expr": "*ptr"
+      },
+      "useOfDlgWordwrapLength": {
+        "occurrence": 0,
+        "offset": 2,
+        "pattern": "39 ?? ?? ?? ?? ?? 0F 86 ?? ?? ?? ?? 53 8B ?? ?? ?? ?? ?? 8D 64 24 00",
+        "expr": "*ptr"
+      },
+      "useOfDlgWordwrapMask": {
+        "occurrence": 0,
+        "offset": 2,
+        "pattern": "C6 80 ?? ?? ?? ?? ?? E9 ?? ?? ?? ?? 3D D0 07 00 00",
+        "expr": "*ptr"
+      },
+      "autoSkipHideBranch": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "74 53 68 32 07 00 00 E8"
+      },
+      "readOggMetadata": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 08 80 3D ?? ?? ?? ?? ?? 56 8B F1 89 75 F8"
+      },
+      "useOfMpkObjects": {
+        "occurrence": 0,
+        "offset": 13,
+        "pattern": "68 ?? ?? ?? ?? 6A 10 68 A8 03 00 00 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? C3",
+        "expr": "*ptr"
+      },
+      "setTipContent": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 51 8D 45 FC 50 6A 00 6A 07"
+      },
+      "drawTipContent": {
+        "occurrence": 1,
+        "offset": 0,
+        "pattern": "55 8B EC 8B ?? ?? ?? ?? ?? 83 EC 08 8B 55 14"
+      },
+      "drawSprite": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 2C A1 ?? ?? ?? ?? 33 C5 89 45 FC F3 0F 10 45 1C"
+      },
+      "malloc": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 56 8B 75 08 83 FE E0"
+      },
+      "callocBase": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "8B FF 55 8B EC 56 8B 75 08 85 F6 74 0C"
+      },
+      "msize": {
+        "occurrence": 1,
+        "offset": 0,
+        "pattern": "55 8B EC 83 7D 08 00 75 15"
+      },
+      "free": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 7D 08 00 74 2D FF 75 08 6A 00"
+      },
+      "realloc": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "8B FF 55 8B EC 57 8B 7D 08 85 FF"
+      },
+      "instTableUser1": {
+        "occurrence": 0,
+        "offset": 8,
+        "pattern": "83 E8 0F 75 ?? 8B 04 8D ?? ?? ?? ??",
+        "expr": "*ptr"
+      },
+      "instTableGraph": {
+        "occurrence": 0,
+        "offset": 5,
+        "pattern": "EB ?? 8B 04 8D ?? ?? ?? ?? 56 FF D0",
+        "expr": "*ptr"
+      },
+      "instTableSystem": {
+        "occurrence": 1,
+        "offset": 5,
+        "pattern": "EB ?? 8B 04 8D ?? ?? ?? ?? 56 FF D0",
+        "expr": "*ptr"
+      },
+      "getFlag": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 8B 4D 08 56 8B F1 C1 EE 03"
+      },
+      "setFlag": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 8B 4D 08 8B D1 C1 EA 03"
+      },
+      "chkViewDic": {
+        "occurrence": 1,
+        "offset": 0,
+        "pattern": "55 8B EC 8B 4D 08 8B 45 0C 8D 14 48 A1"
+      },
+      "openMyGames": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 51 56 8D 45 FC 50"
+      },
+      "SNDgetPlayLevel": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 8B 45 08 83 F8 03"
+      },
+      "useOfWavData": {
+        "occurrence": 0,
+        "offset": 2,
+        "pattern": "89 ?? ?? ?? ?? ?? 8B 45 08 89 ?? ?? ?? ?? ?? C7 81 ?? ?? ?? ?? ?? ?? ?? ?? C7 81 ?? ?? ?? ?? ?? ?? ?? ?? 83 BE",
+        "expr": "*ptr"
+      },
+      "SCRcomKeyWaitTimer": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 08 53 56 8B 75 08 57 8B ?? ?? ?? ?? ?? 8D 47 02"
+      },
+      "useOfSCRflag": {
+        "occurrence": 0,
+        "offset": 2,
+        "pattern": "83 3D ?? ?? ?? ?? ?? 74 92 5E 8B E5 5D C3",
+        "expr": "*ptr"
+      },
+      "PadUpdateDevice": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "80 3D ?? ?? ?? ?? ?? 75 03 33 C0 C3"
+      },
+      "useOfControllerGuid": {
+        "occurrence": 0,
+        "offset": 3,
+        "pattern": "6A 28 68 ?? ?? ?? ?? ?? E8",
+        "expr": "*ptr"
+      },
+      "setAreaParams": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 8B 55 0C 8B 45 08 56 57 0F B6 4A 01 BF 00 01 00 00"
+      },
+      "tipHeaderRetIndexShadow": {
+        "occurrence": 0,
+        "offset": 19,
+        "pattern": "68 2C 01 00 00 6A 35 68 49 02 00 00 6A 4C E8 ?? ?? ?? ??"
+      },
+      "tipHeaderRetIndexMain": {
+        "occurrence": 0,
+        "offset": 19,
+        "pattern": "68 2C 01 00 00 6A 34 68 48 02 00 00 6A 4C E8 ?? ?? ?? ??"
+      },
+      "tipHeaderRetCategoryShadow": {
+        "occurrence": 0,
+        "offset": 19,
+        "pattern": "68 F8 00 00 00 6A 35 68 B5 03 00 00 6A 4C E8 ?? ?? ?? ??"
+      },
+      "tipHeaderRetCategoryMain": {
+        "occurrence": 0,
+        "offset": 19,
+        "pattern": "68 F8 00 00 00 6A 34 68 B4 03 00 00 6A 4C E8 ?? ?? ?? ??"
+      },
+	  "calcSpeakerNameLength" : {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "C1 E0 07 F7 F1 8B ?? ?? ?? ?? ?? BA 02 80 00 00"
+	  }
+    }
+  }
+}

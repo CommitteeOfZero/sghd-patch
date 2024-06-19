@@ -1,0 +1,25 @@
+{
+  "defaultEditor": "notepad",
+
+  "editors": {
+    "notepad": {
+      "path": "notepad.exe",
+      "args": ""
+    },
+
+    "notepad++": {
+      "path": "%ProgramFiles%/Notepad++/notepad++.exe",
+      "args": ""
+    },
+
+    "code": {
+      "path": "%ProgramFiles%/Microsoft VS Code/Code.exe",
+      "args": ""
+    }
+  },
+
+  "languages": {
+    "default": "",
+    "russian": "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+  }
+}

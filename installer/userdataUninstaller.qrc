@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>userdata/header.png</file>
+        <file>userdata/next_button.png</file>
+        <file>userdata/left.png</file>
+        <file>userdata/alert.png</file>
+        <file alias="userdata/script.js">userdata/scriptUninstaller.js</file>
+        <file>userdata/product.json</file>
+    </qresource>
+</RCC>
