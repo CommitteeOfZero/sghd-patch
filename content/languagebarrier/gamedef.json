@@ -96,11 +96,16 @@
         "pattern": "55 8B EC 83 EC 34 A1 ?? ?? ?? ?? 33 C5 89 45 FC F3 0F 10 4D 1C F3 0F 10 45 24 F3 0F 5C C1 F3 0F 11 4D DC F3 0F 10 4D 20 56 FF 75 2C 8B 75 08"
       },
 	    "sg0DrawGlyph3": {
-        "occurrence": 1,
+        "occurrence": 0,
         "offset": 0,
-        "pattern": "55 8B EC 83 EC 7C A1 ?? ?? ?? ?? 33 C5 89 45 FC F3 0F 10"
+        "pattern": "55 8B EC 83 EC ?? A1 ?? ?? ?? ?? 33 C5 89 45 ?? F3 0F 10 45 ?? F3 0F 10 65"
+      }, 
+	    "lbpDrawGlyph2": {
+        "occurrence": 0,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC ?? A1 ?? ?? ?? ?? 33 C5 89 45 ?? F3 0F 10 45 ?? F3 0F 10 55 ?? F3 0F 10 4D ?? FF 75"
       },
-      "drawPhoneText": {
+	    "drawPhoneText": {
         "occurrence": 0,
         "offset": 0,
         "pattern": "55 8B EC B8 ?? ?? ?? ?? E8 ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 FC 8B 45 14 8B 4D 18 85 C0 BA ?? ?? ?? ?? 0F 44 C2 53 89 45 14"
@@ -547,11 +552,11 @@
         "offset": 19,
         "pattern": "68 F8 00 00 00 6A 34 68 B4 03 00 00 6A 4C E8 ?? ?? ?? ??"
       },
-	  "calcSpeakerNameLength" : {
-        "occurrence": 0,
-        "offset": 0,
-        "pattern": "C1 E0 07 F7 F1 8B ?? ?? ?? ?? ?? BA 02 80 00 00"
-	  }
+      "calcSpeakerNameLength" : {
+          "occurrence": 0,
+          "offset": 0,
+          "pattern": "C1 E0 07 F7 F1 8B ?? ?? ?? ?? ?? BA 02 80 00 00"
+      }
     }
   }
 }
