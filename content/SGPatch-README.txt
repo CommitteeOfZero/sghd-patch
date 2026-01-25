@@ -1,6 +1,6 @@
 STEINS;GATE Steam Patch
 Committee of Zero
-Version 2.2.0 - June 16, 2024
+Version 3.0.0 - Month XX, 2026
 ==============================
 http://sonome.dareno.me
 https://twitter.com/CommitteeOf0
@@ -11,6 +11,13 @@ https://github.com/CommitteeOfZero
 See http://sonome.dareno.me/projects/sghd.html for details, contact information and further instructions.
 
 For troubleshooting, please come to our Discord. You can always find the latest version of the patch at https://github.com/CommitteeOfZero/sghd-patch/releases
+
+==============================
+Changes from 2.2:
+==============================
+
+* Major text fixes to bring back needlessly cut narration from the Japanese script.
+* A few more edited CGs added.
 
 ==============================
 Changes from 2.1:
@@ -35,18 +42,6 @@ Changes from 2.0:
 * Minor text and consistency fixes.
 * Fixed issues with word wrapping.
 * Fixed an issue where some HQ videos were not properly replaced.
-
-==============================
-Changes from 1.1:
-==============================
-
-* Lots of internal updates.
-* Installer and launcher updated.
-* Steam Play (Linux) support.
-* .NET Framework is no longer required.
-* Even more translation and consistency fixes.
-* More edited CGs added.
-* Improved song translations.
 
 ==============================
 Changes from 1.1:

@@ -10,6 +10,8 @@
   "coordsMultiplier": 1.5,
   "fontCellWidth": 32,
   "fontCellHeight": 32,
+  "fontXOffset":4,
+  "fontYOffset":0,
   "fontRowLength": 64,
   "glyphRangeFullwidthStart": 351,
   "defaultLineLength": 1280,
@@ -92,6 +94,11 @@
         "occurrence": 0,
         "offset": 0,
         "pattern": "55 8B EC 83 EC 34 A1 ?? ?? ?? ?? 33 C5 89 45 FC F3 0F 10 4D 1C F3 0F 10 45 24 F3 0F 5C C1 F3 0F 11 4D DC F3 0F 10 4D 20 56 FF 75 2C 8B 75 08"
+      },
+	    "sg0DrawGlyph3": {
+        "occurrence": 1,
+        "offset": 0,
+        "pattern": "55 8B EC 83 EC 7C A1 ?? ?? ?? ?? 33 C5 89 45 FC F3 0F 10"
       },
       "drawPhoneText": {
         "occurrence": 0,

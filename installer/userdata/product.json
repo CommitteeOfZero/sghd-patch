@@ -21,8 +21,8 @@
             ],
             "uninstallProductKey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\SteinsGateImprovementPatch",
             "uninstallProductDisplayName": "Steins;Gate Improvement Patch",
-            "uninstallProductDisplayVersion": "2.2.0",
-            "uninstallProductVersionMajor": 2,
+            "uninstallProductDisplayVersion": "3.0.0",
+            "uninstallProductVersionMajor": 3,
             "uninstallProductVersionMinor": 0,
             "uninstallProductUninstallString": "\"%GAME_PATH%/nguninstall.exe\"",
             "paths": {
@@ -37,7 +37,7 @@
     },
     "playShortcut": {
         "displayName": "Steins;Gate (Improvement Patch)",
-        "version": "2.2.0",
+        "version": "3.0.0",
         "targetPath": "%LAUNCHERENG_PATH%",
         "workingDir": "%GAME_PATH%",
         "tooltip": "Play Steins;Gate (Improvement Patch)",

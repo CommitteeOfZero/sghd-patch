@@ -10,7 +10,7 @@ catch {
 }
 
 # EXE metadata configuration
-$version_string = "2.2.0"
+$version_string = "3.0.0"
 $tool_icon = "CoZIcon.ico"
 $game_icon = "LauncherIcon.ico"
 $publisher = "Committee of Zero"
@@ -154,7 +154,7 @@ cd sc3tools
 cargo build --release --bin=sc3tools --package=sc3tools
 cd ..
 
-#PrintSection "Patching scripts"
+PrintSection "Patching scripts"
 New-Item -ItemType directory -Path .\temp\patched_script_archive | Out-Null
 copy script_archive_steam\*.scx temp\patched_script_archive
 #$scripts = gci temp\patched_script_archive
@@ -179,11 +179,11 @@ copy temp\patched_script_archive\*.scx temp\patched_edited_script_archive
 
 Write-Output "========================================================================"
 Write-Output "Packing enscript.mpk"
-py -2 .\mpkpack.py script_toc.csv DIST\languagebarrier\enscript.mpk
+python .\mpkpack.py script_toc.csv DIST\languagebarrier\enscript.mpk
 Write-Output "========================================================================"
 
 PrintSection "Packing c0data.mpk"
-py -2 .\mpkpack.py c0data_toc.csv DIST\languagebarrier\c0data.mpk
+python .\mpkpack.py c0data_toc.csv DIST\languagebarrier\c0data.mpk
 
 # LanguageBarrier currently needs this file to be present even if no string redirections are configured
 echo $null > .\DIST\languagebarrier\stringReplacementTable.bin
