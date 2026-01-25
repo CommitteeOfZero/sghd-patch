@@ -1,0 +1,45 @@
+{
+	"input": {
+        "glyphs-specification": "steins_gate_hd.json",
+        "fonts": {
+            "normal": {
+                "file": "NotoSansCJKjp-Regular.woff",
+                "center-line": 0.38,
+                "size": 38
+            },
+            "italic": {
+                "file": "Noto Sans Italic.ttf",
+                "center-line": 0.38,
+                "size": 38
+            }
+        }
+    },
+    "output": {
+        "bitmaps": [
+            {
+                "foreground": "FONT.PNG",
+                "shadow": "throwaway-font-outline_A.png.png",
+                "offset": 0,
+                "tile-count-x": 64,
+                "tile-count-y": 125,
+                "tile-size": 48,
+                "tile-padding": 4
+            },
+            {
+                "foreground": "throwaway-FONT.PNG",
+                "shadow": "font-outline_A.png",
+                "offset": 0,
+                "tile-count-x": 64,
+                "tile-count-y": 125,
+                "tile-size": 57,
+                "tile-padding": 8
+            }
+        ],
+        "metrics": {
+            "path": "widths.bin",
+            "offset": 0,
+            "count": 8000,
+            "scale": 0.66666
+        }
+    }
+}

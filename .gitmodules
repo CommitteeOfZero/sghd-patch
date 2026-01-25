@@ -1,7 +1,3 @@
-[submodule "mgsfontgen-dx"]
-	path = mgsfontgen-dx
-	url = https://github.com/CommitteeOfZero/mgsfontgen-dx.git
-	branch = master
 [submodule "installer/noidget"]
 	path = installer/noidget
 	url = https://github.com/CommitteeOfZero/noidget.git
@@ -10,11 +6,13 @@
 	path = launcher/realboot
 	url = https://github.com/CommitteeOfZero/realboot.git
 	branch = master
-[submodule "sc3tools"]
-	path = sc3tools
-	url = https://github.com/CommitteeOfZero/sc3tools.git
-	branch = main
 [submodule "LanguageBarrier"]
 	path = LanguageBarrier
 	url = https://github.com/CommitteeOfZero/LanguageBarrier.git
-	branch = lbp-changes
+	branch = sg30-changes
+[submodule "coalesc3"]
+	path = coalesc3
+	url = https://github.com/CommitteeOfZero/coalesc3.git
+[submodule "MagesFontTool"]
+	path = MagesFontTool
+	url = https://github.com/CommitteeOfZero/MagesFontTool

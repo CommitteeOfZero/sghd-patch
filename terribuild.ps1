@@ -120,9 +120,11 @@ Remove-Item -Force -Recurse -ErrorAction SilentlyContinue .\symbols
 New-Item -ItemType directory -Path .\symbols | Out-Null
 
 PrintSection "Pulling latest script changes"
-cd sg-textdumps
+cd coalesc3
 & git pull
-cd ..
+cd data/steins_gate_hd/txt_eng
+& git pull
+cd ../../../..
 
 PrintSection "Building LanguageBarrier as $languagebarrier_configuration"
 & "$msbuild" "$languagebarrier_dir\LanguageBarrier\LanguageBarrier.vcxproj" "/p:Configuration=$languagebarrier_configuration"
@@ -138,49 +140,21 @@ Move-Item .\DIST\dinput8.dll ".\DIST\GATE"
 # "Procedure entry point csri_renderer_default could not be located in ...\CHILD\DINPUT8.dll"
 Copy-Item .\DIST\VSFilter.dll ".\DIST\GATE"
 
-PrintSection "Building and running mgsfontgen-dx"
-$mgsfontgen_dx_repo = ".\mgsfontgen-dx"
-cd $mgsfontgen_dx_repo
-& .\build.cmd
-cd sg
-& .\generate.cmd
-Move-Item -Force .\FONT_A.png ..\..\temp\FONT.png
-Move-Item -Force .\*.png ..\..\DIST\languagebarrier\
-Move-Item -Force .\widths.bin ..\..\DIST\languagebarrier\widths.bin
-cd ..\..
-
-PrintSection "Building sc3tools"
-cd sc3tools
-cargo build --release --bin=sc3tools --package=sc3tools
-cd ..
+PrintSection "Building and running MagesFontTool"
+cd MagesFontTool
+&  dotnet publish --configuration Release --runtime win-x64 --no-self-contained --output publish/magesfonttool-windows-amd64 src/MagesFontTool
+cd publish/magesfonttool-windows-amd64
+& .\MagesFontTool.exe --config ..\..\..\MagesFontToolConfig\config.json --output out
+Move-Item -Force .\out\FONT.png ..\..\..\temp\FONT.png
+Move-Item -Force .\out\font-outline_A.png ..\..\..\DIST\languagebarrier\font-outline_A.png
+Move-Item -Force .\out\widths.bin ..\..\..\DIST\languagebarrier\widths.bin
+cd ..\..\..
 
 PrintSection "Patching scripts"
-New-Item -ItemType directory -Path .\temp\patched_script_archive | Out-Null
-copy script_archive_steam\*.scx temp\patched_script_archive
-#$scripts = gci temp\patched_script_archive
-#foreach ($script in $scripts)
-#{
-#    $patches = gci .\zero-script-patches\$($script.Name).*.vcdiff | Sort
-#    foreach ($patch in $patches)
-#    {
-#        $scriptPath = $script.FullName
-#		Write-Output "$scriptPath $($patch.FullName) $scriptPath.tmp"
-#        .\xdelta3.exe -d -s "$scriptPath" "$($patch.FullName)" "$scriptPath.tmp"
-#        Remove-Item $scriptPath
-#        Move-Item -Path "$scriptPath.tmp" -Destination "$scriptPath"
-#    }
-#}
-#
-
-New-Item -ItemType directory -Path .\temp\patched_edited_script_archive | Out-Null
-copy temp\patched_script_archive\*.scx temp\patched_edited_script_archive
-.\sc3tools\target\release\sc3tools.exe replace-text temp\patched_edited_script_archive\*.SCX sg-textdumps\*.txt steinsgatehd
-#.\SciAdv.Net\bin\Release\Tools\SC3Tools\sc3tools.exe replace-text -o temp\patched_edited_script_archive temp\patched_script_archive\*.scx sg-textdumps\*.txt steinsgatehd
-
-Write-Output "========================================================================"
-Write-Output "Packing enscript.mpk"
-python .\mpkpack.py script_toc.csv DIST\languagebarrier\enscript.mpk
-Write-Output "========================================================================"
+cd coalesc3
+python build.py steins_gate_hd windows eng --clean
+Copy-Item .\out\steins_gate_hd\windows_eng\enscript.mpk ..\DIST\languagebarrier\
+cd ..
 
 PrintSection "Packing c0data.mpk"
 python .\mpkpack.py c0data_toc.csv DIST\languagebarrier\c0data.mpk
