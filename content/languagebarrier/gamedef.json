@@ -10,8 +10,8 @@
   "coordsMultiplier": 1.5,
   "fontCellWidth": 32,
   "fontCellHeight": 32,
-  "fontXOffset":4,
-  "fontYOffset":0,
+  "fontXOffset": 4,
+  "fontYOffset": 0,
   "fontRowLength": 64,
   "glyphRangeFullwidthStart": 351,
   "defaultLineLength": 1280,
@@ -556,6 +556,69 @@
           "occurrence": 0,
           "offset": 0,
           "pattern": "C1 E0 07 F7 F1 8B ?? ?? ?? ?? ?? BA 02 80 00 00"
+      },
+      "useOfPhoneHitboxesSG" : {
+        "occurrence" : 0,
+        "offset" : 1,
+        "pattern" : "68 ?? ?? ?? ?? 6A 14 E8 ?? ?? ?? ?? 6A 01 6A 14 E8 ?? ?? ?? ?? 6A 14 6A 00 E8 ?? ?? ?? ?? 6A 14 6A 02 E8 ?? ?? ?? ?? 83 C4 20",
+        "expr" : "*ptr"
+      },
+      "installMouseHitboxesSG" : {
+        "occurrence" : 0,
+        "offset" : 0,
+        "pattern" : "E8 ?? ?? ?? ?? 6A 01 6A 0B E8 ?? ?? ?? ?? 6A 0B 6A 00 E8 ?? ?? ?? ?? 6A 0B 6A 02 E8 ?? ?? ?? ?? 83 C4 20 C3 ?? ?? ?? ?? ?? C7 05 ?? ?? ?? ?? ?? ?? ?? ?? C7 05",
+        "expr" : "ptr+(*(ptr+1))+5"
+      },
+      "handlePhoneMenuInput" : {
+        "occurrence" : 0,
+        "offset" : 0,
+        "pattern" : "A1 ?? ?? ?? ?? 85 05 ?? ?? ?? ?? 74 1F A1 ?? ?? ?? ?? C7 80 48 6A 00 00 00 00 00 00"
+      },
+      "checkHitboxPressSG" : {
+        "occurrence" : 0,
+        "offset" : 0,
+        "pattern" : "55 8B EC 53 8B 1D ?? ?? ?? ?? 56 33 F6 57"
+      },
+      "useOfPhoneMenuOptionSelectedSG" : {
+        "occurrence" : 0,
+        "offset" : 2,
+        "pattern" : "C7 05 ?? ?? ?? ?? ?? ?? ?? ?? 74 7C",
+        "expr" : "*ptr"
+      },
+      "useOfPhoneMenuUnk" : {
+        "occurrence" : 0,
+        "offset" : 2,
+        "pattern" : "83 3D ?? ?? ?? ?? ?? C7 05 ?? ?? ?? ?? ?? ?? ?? ?? 74 7C",
+        "expr" : "*ptr"
+      },
+      "phoneMenuFlagCheckUnk" : {
+        "occurrence" : 0,
+        "offset" : 0,
+        "pattern" : "56 33 C0 33 F6"
+      },
+      "useOfPadRef" : {
+        "occurrence" : 0,
+        "offset" : 2,
+        "pattern" : "81 0D ?? ?? ?? ?? ?? ?? ?? ?? 83 FE 0C",
+        "expr" : "*ptr"
+      },
+      "useOfPadCustom" : {
+        "occurrence" : 0,
+        "offset" : 2,
+        "pattern" : "85 05 ?? ?? ?? ?? 74 10 81 F9 FF 00 00 00",
+        "expr" : "*ptr"
+      },
+      "useOfScrWork" : {
+        "occurrence" : 0,
+        "offset" : 1,
+        "pattern" : "A3 ?? ?? ?? ?? FF D7 50 FF D6 68 10 27 00 00",
+        "expr" : "**ptr"
+      },
+      "useOfWindowHandle" : {
+        "occurrence" : 0,
+        "offset" : 2,
+        "pattern" : "FF 35 ?? ?? ?? ?? 50 0F B7 05",
+        "expr" : "*ptr"
       }
     }
   }

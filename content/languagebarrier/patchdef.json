@@ -17,6 +17,7 @@
     "shouldHideAutoSkip": false,
     "usePoolAllocators": false,
     "hijackLauncher": "LauncherC0.exe",
+    "fglUrl" : "languagebarrier/site/future_gadget_lab.html",
     "fmv": {
       "fonts": [
         "Aller_Rg.ttf",
