@@ -174,6 +174,10 @@ function DoTx() {
     }
   }
 
+  // We're replacing Steam achievement data for them to be accurate
+  var steamAchievementSection = ng.tx.tx().addSection('Replacing Steam Achievements data');
+  steamAchievementSection.copyFiles('%STEAM_ACHIEVEMENT_CONTENT%/*', '%STEAM_PATH%/appcache/stats')
+
   var patchContentSection = ng.tx.tx().addSection('Copying patch content');
   patchContentSection.removeDirectory('%GAME_PATH%/GATE');
   patchContentSection.copyFiles('%PATCH_CONTENT%/*', '%GAME_PATH%');

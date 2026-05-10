@@ -73,6 +73,8 @@ function DoTx() {
     section.removeDirectory('%COZ_CONFIG_LOCATION%', true);
   }
 
+  section.removeFile('%STEAM_PATH%/appcache/stats/UserGameStatsSchema_412830.bin')
+
   section.removeDirectory('%GAME_PATH%/GATE');
 
   section.rollbackReceipt();

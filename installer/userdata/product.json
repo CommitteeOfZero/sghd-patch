@@ -6,6 +6,7 @@
     "paths": {
         "GAME_STEAM_NAME": "STEINS;GATE",
         "PATCH_CONTENT": "DIST",
+        "STEAM_ACHIEVEMENT_CONTENT": "achievements",
         "LAUNCHERENG_PATH": "%GAME_PATH%/LauncherC0.exe",
         "LANGUAGEBARRIER_LOG_PATH": "%GAME_PATH%/languagebarrier/log.txt",
         "LAUNCHER_EXE": "LauncherC0.exe"

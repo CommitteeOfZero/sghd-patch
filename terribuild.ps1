@@ -220,6 +220,8 @@ New-Item -ItemType directory -Path $patchFolderName | Out-Null
 cd $patchFolderName
 New-Item -ItemType directory -Path DIST | Out-Null
 Move-Item -Force ..\..\DIST\* .\DIST
+New-Item -ItemType directory -Path achievements | Out-Null
+Copy-Item -Recurse -Force  ..\..\achievements\* .\achievements
 Move-Item -Force ..\..\installer\deploy\* .
 Move-Item -Force .\noidget.exe .\SGPatch-Installer.exe
 cd ..\..\DIST
