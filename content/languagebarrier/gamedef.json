@@ -557,6 +557,11 @@
           "offset": 0,
           "pattern": "C1 E0 07 F7 F1 8B ?? ?? ?? ?? ?? BA 02 80 00 00"
       },
+      "clearMenuFix": {
+          "pattern": "55 8B EC 83 EC ?? A1 ?? ?? ?? ?? 33 C5 89 45 ?? 56 8B 75 ?? 6A",
+          "occurrence": 0,
+          "offset": 0
+      },
       "useOfPhoneHitboxesSG" : {
         "occurrence" : 0,
         "offset" : 1,
